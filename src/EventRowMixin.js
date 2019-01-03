@@ -53,12 +53,13 @@ export default {
         continuesPrior={continuesPrior}
         continuesAfter={continuesAfter}
         selected={isSelected(event, selected)}
+        slotMetrics={slotMetrics}
       />
     )
   },
 
   renderSpan(slots, len, key, content = ' ') {
-    let per = Math.abs(len) / slots * 100 + '%'
+    let per = (Math.abs(len) / slots) * 100 + '%'
 
     return (
       <div

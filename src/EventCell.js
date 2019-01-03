@@ -12,6 +12,7 @@ let propTypes = {
   isAllDay: PropTypes.bool,
   continuesPrior: PropTypes.bool,
   continuesAfter: PropTypes.bool,
+  slotMetrics: PropTypes.object,
 
   accessors: PropTypes.object.isRequired,
   components: PropTypes.object.isRequired,
